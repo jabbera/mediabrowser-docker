@@ -23,7 +23,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 637D1286; \
     echo 'deb http://ppa.launchpad.net/apps-z/mediabrowser/ubuntu trusty main' > /etc/apt/sources.list.d/20mediabrowser.list
     
 # Install latest MediaBrowser release from development PPA 
-RUN  apt-get update && apt-get install -qy --force-yes mediabrowser && apt-get clean
+RUN  apt-get update && apt-get install -qy --force-yes "mediabrowser=3.0.5518.*" && apt-get clean
 
 # Expose config volume
 VOLUME /config 
