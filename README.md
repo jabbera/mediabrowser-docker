@@ -1,5 +1,5 @@
 # Description
-This image is the "MediaBrowser Server" (*http://mediabrowser.tv*)[http://mediabrowser.tv]
+This image is the "MediaBrowser Server" [(*http://mediabrowser.tv*)](http://mediabrowser.tv)
 I created it to use in place of the official mediabrowser/mbserver image using a lighter weight debian:jessie base and without the circusd process manager to use the built in docker user parameter.
 
 # Volumes:
