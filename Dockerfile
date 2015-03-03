@@ -3,7 +3,10 @@ FROM jacobalberty/mb-base:latest
 MAINTAINER Jacob Alberty <jacob.alberty@foundigital.com>
 
 # Install latest MediaBrowser release from development PPA 
-RUN  apt-get update && apt-get install -qy --force-yes mediabrowser && apt-get clean
+RUN apt-get -q update && \
+    apt-get install -qy --force-yes mediabrowser && \
+    apt-get -q clean && \
+    rm -f /var/lib/apt/lists/[!partial]*
 
 # Expose config volume
 VOLUME /config 
