@@ -6,7 +6,7 @@ MAINTAINER Jacob Alberty <jacob.alberty@foundigital.com>
 RUN apt-get -q update && \
     apt-get install -qy --force-yes mediabrowser && \
     apt-get -q clean && \
-    rm -f /var/lib/apt/lists/[!partial]*
+    rm -rf /var/lib/apt/lists/*
 
 # Expose config volume
 VOLUME /config 
