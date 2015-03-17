@@ -13,6 +13,8 @@ VOLUME /config
 
 # Default MB3 HTTP/tcp server port
 EXPOSE 8096/tcp
+# Default MB3 SSL/tcp server port
+EXPOSE 8920/tcp
 # UDP server port
 EXPOSE 7359/udp
 # ssdp port for UPnP / DLNA discovery
